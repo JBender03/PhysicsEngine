@@ -1,0 +1,19 @@
+# ninja log v6
+6	901	7588915002795796	CMakeFiles/vector_tests.dir/tests/main.cpp.obj	1a14cec74aff2913
+2	1053	7588915002750762	CMakeFiles/physics_lib.dir/src/Vector2D.cpp.obj	adbf9385b71b922c
+234	299	7588932517041050	libphysics_lib.a	ea07d615cc918019
+10	240	7588932514799248	CMakeFiles/physics_tests.dir/tests/main.cpp.obj	11ce99f74e7b38c1
+1191	1316	7588915014635886	vector_tests.exe	3313f79c34d245ba
+300	396	7588932517697359	physics_tests.exe	e404b070300059e1
+5	233	7588932514748611	CMakeFiles/physics_lib.dir/src/Particle.cpp.obj	e5ef4033fb60cfc7
+5	225	7588939401731377	CMakeFiles/physics_lib.dir/src/Particle.cpp.obj	e5ef4033fb60cfc7
+228	291	7588939403955054	libphysics_lib.a	ea07d615cc918019
+292	389	7588939404605279	physics_tests.exe	e404b070300059e1
+5	234	7588942038914812	CMakeFiles/physics_lib.dir/src/Particle.cpp.obj	e5ef4033fb60cfc7
+10	242	7588942038969867	CMakeFiles/physics_tests.dir/tests/main.cpp.obj	11ce99f74e7b38c1
+236	299	7588942041218823	libphysics_lib.a	ea07d615cc918019
+300	396	7588942041865141	physics_tests.exe	e404b070300059e1
+4	236	7588942577992584	CMakeFiles/physics_tests.dir/tests/main.cpp.obj	11ce99f74e7b38c1
+238	338	7588942580323528	physics_tests.exe	e404b070300059e1
+5	225	7588942927649341	CMakeFiles/physics_tests.dir/tests/main.cpp.obj	11ce99f74e7b38c1
+226	326	7588942929851124	physics_tests.exe	e404b070300059e1
