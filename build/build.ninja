@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Physics
+# Project: PhysicsEngine
 # Configurations: 
 # =============================================================================
 
@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/jtheg/Documents/repos/Physics/build/
+cmake_ninja_workdir = C$:/Users/jtheg/Documents/repos/PhysicsEngine/build/
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target physics_lib
 
@@ -44,17 +44,31 @@ cmake_ninja_workdir = C$:/Users/jtheg/Documents/repos/Physics/build/
 
 build cmake_object_order_depends_target_physics_lib: phony || .
 
-build CMakeFiles/physics_lib.dir/src/Vector2D.cpp.obj: CXX_COMPILER__physics_lib_unscanned_ C$:/Users/jtheg/Documents/repos/Physics/src/Vector2D.cpp || cmake_object_order_depends_target_physics_lib
+build CMakeFiles/physics_lib.dir/src/Vector2D.cpp.obj: CXX_COMPILER__physics_lib_unscanned_ C$:/Users/jtheg/Documents/repos/PhysicsEngine/src/Vector2D.cpp || cmake_object_order_depends_target_physics_lib
   DEP_FILE = CMakeFiles\physics_lib.dir\src\Vector2D.cpp.obj.d
   FLAGS = -std=gnu++17
-  INCLUDES = -IC:/Users/jtheg/Documents/repos/Physics/include
+  INCLUDES = -IC:/Users/jtheg/Documents/repos/PhysicsEngine/include
   OBJECT_DIR = CMakeFiles\physics_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\physics_lib.dir\src
 
-build CMakeFiles/physics_lib.dir/src/Particle.cpp.obj: CXX_COMPILER__physics_lib_unscanned_ C$:/Users/jtheg/Documents/repos/Physics/src/Particle.cpp || cmake_object_order_depends_target_physics_lib
+build CMakeFiles/physics_lib.dir/src/Particle.cpp.obj: CXX_COMPILER__physics_lib_unscanned_ C$:/Users/jtheg/Documents/repos/PhysicsEngine/src/Particle.cpp || cmake_object_order_depends_target_physics_lib
   DEP_FILE = CMakeFiles\physics_lib.dir\src\Particle.cpp.obj.d
   FLAGS = -std=gnu++17
-  INCLUDES = -IC:/Users/jtheg/Documents/repos/Physics/include
+  INCLUDES = -IC:/Users/jtheg/Documents/repos/PhysicsEngine/include
+  OBJECT_DIR = CMakeFiles\physics_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\physics_lib.dir\src
+
+build CMakeFiles/physics_lib.dir/src/GravityForce.cpp.obj: CXX_COMPILER__physics_lib_unscanned_ C$:/Users/jtheg/Documents/repos/PhysicsEngine/src/GravityForce.cpp || cmake_object_order_depends_target_physics_lib
+  DEP_FILE = CMakeFiles\physics_lib.dir\src\GravityForce.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/jtheg/Documents/repos/PhysicsEngine/include
+  OBJECT_DIR = CMakeFiles\physics_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\physics_lib.dir\src
+
+build CMakeFiles/physics_lib.dir/src/Renderer.cpp.obj: CXX_COMPILER__physics_lib_unscanned_ C$:/Users/jtheg/Documents/repos/PhysicsEngine/src/Renderer.cpp || cmake_object_order_depends_target_physics_lib
+  DEP_FILE = CMakeFiles\physics_lib.dir\src\Renderer.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/jtheg/Documents/repos/PhysicsEngine/include
   OBJECT_DIR = CMakeFiles\physics_lib.dir
   OBJECT_FILE_DIR = CMakeFiles\physics_lib.dir\src
 
@@ -66,7 +80,7 @@ build CMakeFiles/physics_lib.dir/src/Particle.cpp.obj: CXX_COMPILER__physics_lib
 #############################################
 # Link the static library libphysics_lib.a
 
-build libphysics_lib.a: CXX_STATIC_LIBRARY_LINKER__physics_lib_ CMakeFiles/physics_lib.dir/src/Vector2D.cpp.obj CMakeFiles/physics_lib.dir/src/Particle.cpp.obj
+build libphysics_lib.a: CXX_STATIC_LIBRARY_LINKER__physics_lib_ CMakeFiles/physics_lib.dir/src/Vector2D.cpp.obj CMakeFiles/physics_lib.dir/src/Particle.cpp.obj CMakeFiles/physics_lib.dir/src/GravityForce.cpp.obj CMakeFiles/physics_lib.dir/src/Renderer.cpp.obj
   OBJECT_DIR = CMakeFiles\physics_lib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -74,44 +88,44 @@ build libphysics_lib.a: CXX_STATIC_LIBRARY_LINKER__physics_lib_ CMakeFiles/physi
   TARGET_PDB = physics_lib.a.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target physics_tests
+# Object build statements for EXECUTABLE target renderer_test
 
 
 #############################################
-# Order-only phony target for physics_tests
+# Order-only phony target for renderer_test
 
-build cmake_object_order_depends_target_physics_tests: phony || cmake_object_order_depends_target_physics_lib
+build cmake_object_order_depends_target_renderer_test: phony || cmake_object_order_depends_target_physics_lib
 
-build CMakeFiles/physics_tests.dir/tests/main.cpp.obj: CXX_COMPILER__physics_tests_unscanned_ C$:/Users/jtheg/Documents/repos/Physics/tests/main.cpp || cmake_object_order_depends_target_physics_tests
-  DEP_FILE = CMakeFiles\physics_tests.dir\tests\main.cpp.obj.d
+build CMakeFiles/renderer_test.dir/tests/renderer_test.cpp.obj: CXX_COMPILER__renderer_test_unscanned_ C$:/Users/jtheg/Documents/repos/PhysicsEngine/tests/renderer_test.cpp || cmake_object_order_depends_target_renderer_test
+  DEP_FILE = CMakeFiles\renderer_test.dir\tests\renderer_test.cpp.obj.d
   FLAGS = -std=gnu++17
-  INCLUDES = -IC:/Users/jtheg/Documents/repos/Physics/include
-  OBJECT_DIR = CMakeFiles\physics_tests.dir
-  OBJECT_FILE_DIR = CMakeFiles\physics_tests.dir\tests
+  INCLUDES = -IC:/Users/jtheg/Documents/repos/PhysicsEngine/include
+  OBJECT_DIR = CMakeFiles\renderer_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\renderer_test.dir\tests
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target physics_tests
+# Link build statements for EXECUTABLE target renderer_test
 
 
 #############################################
-# Link the executable physics_tests.exe
+# Link the executable renderer_test.exe
 
-build physics_tests.exe: CXX_EXECUTABLE_LINKER__physics_tests_ CMakeFiles/physics_tests.dir/tests/main.cpp.obj | libphysics_lib.a || libphysics_lib.a
-  LINK_LIBRARIES = libphysics_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\physics_tests.dir
+build renderer_test.exe: CXX_EXECUTABLE_LINKER__renderer_test_ CMakeFiles/renderer_test.dir/tests/renderer_test.cpp.obj | libphysics_lib.a C$:/msys64/ucrt64/lib/libsfml-graphics.dll.a C$:/msys64/ucrt64/lib/libsfml-window.dll.a C$:/msys64/ucrt64/lib/libsfml-system.dll.a || libphysics_lib.a
+  LINK_LIBRARIES = libphysics_lib.a  C:/msys64/ucrt64/lib/libsfml-graphics.dll.a  C:/msys64/ucrt64/lib/libsfml-window.dll.a  C:/msys64/ucrt64/lib/libsfml-system.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\renderer_test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = physics_tests.exe
-  TARGET_IMPLIB = libphysics_tests.dll.a
-  TARGET_PDB = physics_tests.exe.dbg
+  TARGET_FILE = renderer_test.exe
+  TARGET_IMPLIB = librenderer_test.dll.a
+  TARGET_PDB = renderer_test.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\jtheg\Documents\repos\Physics\build && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\jtheg\Documents\repos\PhysicsEngine\build && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -122,7 +136,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\jtheg\Documents\repos\Physics\build && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SC:\Users\jtheg\Documents\repos\Physics -BC:\Users\jtheg\Documents\repos\Physics\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\jtheg\Documents\repos\PhysicsEngine\build && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\jtheg\Documents\repos\PhysicsEngine -BC:\Users\jtheg\Documents\repos\PhysicsEngine\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -134,7 +148,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build physics_lib: phony libphysics_lib.a
 
-build physics_tests: phony physics_tests.exe
+build renderer_test: phony renderer_test.exe
 
 # =============================================================================
 # Folder targets.
@@ -142,9 +156,9 @@ build physics_tests: phony physics_tests.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jtheg/Documents/repos/Physics/build
+# Folder: C:/Users/jtheg/Documents/repos/PhysicsEngine/build
 
-build all: phony libphysics_lib.a physics_tests.exe
+build all: phony libphysics_lib.a renderer_test.exe
 
 # =============================================================================
 # Built-in targets
@@ -153,14 +167,14 @@ build all: phony libphysics_lib.a physics_tests.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/jtheg/Documents/repos/Physics/CMakeLists.txt C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/jtheg/Documents/repos/PhysicsEngine/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/SFML/SFMLConfig.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLSharedTargets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/jtheg/Documents/repos/Physics/CMakeLists.txt C$:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake: phony
+build C$:/Users/jtheg/Documents/repos/PhysicsEngine/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/SFML/SFMLConfig.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLConfigDependencies.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLSharedTargets-release.cmake C$:/msys64/ucrt64/lib/cmake/SFML/SFMLSharedTargets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake: phony
 
 
 #############################################
